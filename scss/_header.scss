@@ -1,0 +1,135 @@
+._header {
+  flex: 0 0 $_header-height;
+  margin-bottom: 30px;
+  z-index: 100;
+
+  .top {
+    background: #111;
+    color: #FFF;
+
+    a {
+      color: #FFF;
+    }
+
+    nav {
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+      }
+
+      li {
+        display: inline-block;
+        padding: 14px 0;
+        position: relative;
+
+        a {
+          text-transform: uppercase;
+        }
+
+        ul {
+          background: #F4F4F4;
+          display: none;
+          height: 227px;
+          justify-content: flex-start;
+          left: -15px;
+          margin-top: 14px;
+          padding: 20px 30px;
+          position: absolute;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 780px;
+
+          a {
+            color: #111;
+            display: block;
+            letter-spacing: 0;
+            margin: 2px 0;
+            text-transform: none;
+
+            &:hover {
+              color: #9D8E79;
+            }
+
+          }
+
+          li {
+            padding: 0;
+          }
+
+          &:after {
+            content: "";
+            border: 12px solid transparent;
+            border-top: 7px solid #111;
+            margin-left: 7px;
+            position: absolute;
+            top: 0;
+          }
+
+        }
+
+        &.has-options:hover .options { display: flex }
+      }
+
+      a {
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+
+    }
+
+    .language {
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    @media all and (max-width: 576px) {
+      ul {
+        background: #FFF;
+        flex-direction: column;
+        left: -100%;
+        padding-left: 0;
+        position: fixed;
+        transition: .3s left;
+        width: 100%;
+
+
+        li {
+          padding-left: 10px;
+          border-bottom: 1px solid #CCC;
+
+          a {
+            color: #333;
+            font-weight: 500;
+            text-transform: none;
+          }
+
+          &.has-options:hover .options { display: none }
+
+          &:last-of-type { border-bottom: none }
+        }
+
+        &.opened {
+          left: 0;
+          z-index: 1;
+
+        }
+      }
+    }
+
+  }
+
+  .hint {
+    background: #F7CCDE;
+    color: #333;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 4px;
+    text-align: center;
+  }
+}

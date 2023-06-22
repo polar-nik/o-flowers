@@ -1,0 +1,53 @@
+._content {
+  flex: auto;
+}
+
+ul.catalog {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  a {
+    padding: 4px 8px;
+
+    &.current {
+      font-weight: 700;
+    }
+  }
+}
+
+.button {
+  background: none;
+  border-radius: 3px;
+  display: inline-block;
+  color: #333;
+  border: 2px solid #9d8e79;
+  font-size: 14px;
+  padding: 10px 18px;
+
+  &.same {
+    border: 2px dashed #9d8e79;
+  }
+  &.w-icon:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f291";
+    padding-right: 10px;
+  }
+  &:active {
+    background: #9d8e79;
+    color: #FFF;
+  }
+}
+
+#pick-the-same .button { max-width: 300px;}
+
+.plate-with-bg {
+  background: #FAF9F7;
+  padding: 20px 0 0;
+}

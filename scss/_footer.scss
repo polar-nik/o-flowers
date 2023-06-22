@@ -1,0 +1,39 @@
+._footer {
+  background-color: #F4F4F4;
+  flex: 0 0 $_footer-height;
+  padding: 20px 0 40px;
+  margin: 40px 0 0;
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      padding: 2px 4px;
+      margin: 2px 4px 15px;
+    }
+  }
+
+  .phone {
+    font-family: "Roboto Slab", serif;
+    font-size: 27px;
+    font-weight: 100;
+  }
+
+  .recall {
+    border-bottom: 1px solid #333;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .social {
+    padding-top: 30px;
+    i {
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Index</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+      #preloader {
+        background: #FFF;
+        height: 100%;
+        left: 0;
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        transition: opacity .3s;
+        width: 100%;
+        z-index: 10000 }
+
+      @keyframes spin {
+        0% { opacity: 0; transform: rotate(0deg); }
+        50% { opacity: 1; transform: rotate(180deg); }
+        100% { opacity: 0; transform: rotate(360deg); }
+      }
+
+      #spinner {
+        animation: spin 2s linear infinite;
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #6592ad;
+        border-radius: 50%;
+        bottom: 0;
+        height: 60px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60px; }
+
+      /* Custom word translates */
+      .lang-en .showcase .sold .image-wrapper:after { content: "Sold" }
+      .lang-en .showcase .new .image-wrapper:before { content: "New" }
+    </style>
+</head>
+<body>
+<!--<body class="lang-en">-->
+    <div id="preloader"><div id="spinner"></div></div>
+
+    <header class="_header">
+        <div class="top">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-1 d-block d-md-none"><a id="menu_switcher" href="#"><i class="fas fa-fw fa-bars"></i></a></div>
+                    <div class="col-5 col-md-2 my-3 order-1">
+                        <div class="text-center"><a href="index.html"><img src="images/logo-w.png" class="logo" alt="flowers"></a></div>
+                    </div>
+                    <nav class="col-md-7 start order-4 order-md-2">
+                        <ul>
+                            <li class="has-options">
+                                <a href="catalog.html">Каталог</a>
+                                <ul class="options">
+                                    <li><a href="catalog.html">Популярное</a></li>
+                                    <li><a href="catalog.html">Витрина онлайн</a></li>
+                                    <li><a href="catalog.html">Авторские букеты</a></li>
+                                    <li><a href="catalog.html">Весна</a></li>
+                                    <li><a href="catalog.html">Монобукеты</a></li>
+                                    <li><a href="catalog.html">Дуо- и Трио- букеты</a></li>
+                                    <li><a href="catalog.html">Коробки с цветами</a></li>
+                                    <li><a href="catalog.html">Корзины цветов</a></li>
+                                    <li><a href="catalog.html">Вдохновение брендом</a></li>
+                                    <li><a href="catalog.html">Букет невесты</a></li>
+                                    <li><a href="catalog.html">Вазы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="col-6 col-md-2 my-3 order-3">
+                        <div class="text-center">
+                            <div class="inline-list">
+                                <div class="item"><a href="basket.html"><i class="fas fa-shopping-basket"></i></a></div>
+                                <div class="item position-relative">
+                                    <a href="favourite.html"><i class="fas fa-heart"></i></a>
+                                    <span id="favourites-total">0</span>
+                                </div>
+                                <div class="item"><a data-fancybox data-src="#search-field" href="javascript:;"><i class="fas fa-search"></i></a></div>
+                                <div class="item"><a href="#" class="language">RU</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hint">Премиум букеты с доставкой по Праге и окрестностям</div>
+    </header>
+
+    <main class="_content">
+        <div class="container">
+            <div class="header row">
+                <div class="col-6 left">ONLINE витрина</div>
+                <div class="col-6 right"><a href="#">Смотреть всё &rsaquo;</a></div>
+            </div>
+            <div class="showcase slider">
+                <!-- Simple item in carousel -->
+                <div class="item">
+                    <!-- In `data-id="%"` must be placed an id of item -->
+                    <div class="favourite"><a href="#" data-id="1"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-1.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <!-- / Simple item in carousel -->
+
+                <!-- New sold item in carousel -->
+                <div class="new sold item">
+                    <div class="favourite"><a href="#" data-id="2"><i class="fas fa-heart"></i></a></div>
+                    <div class="image-wrapper"><img src="images/image-2.jpg" alt="Image 1"></div>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name">Весенний [16.04.2023]</div>
+                </div>
+                <!-- / New sold item in carousel -->
+
+                <div class="item">
+                    <div class="favourite"><a href="#" data-id="3"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-3.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+
+                <!-- Sold item in carousel -->
+                <div class="sold item">
+                    <div class="favourite"><a href="#" data-id="4"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-1.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <!-- / Sold item in carousel -->
+
+                <!-- New item in carousel -->
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="5"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-2.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <!-- / New item in carousel -->
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="header row">
+                <div class="col-6 left">Популярное</div>
+                <div class="col-6 right"><a href="#">Смотреть всё &rsaquo;</a></div>
+            </div>
+            <div class="showcase slider">
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="2"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-2.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name">Весенний [16.04.2023]</div>
+                </div>
+                <div class="item">
+                    <div class="favourite"><a href="#" data-id="3"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-3.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="item">
+                    <div class="favourite"><a href="#" data-id="4"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-1.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="5"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-2.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="item">
+                    <div class="favourite"><a href="#" data-id="6"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-3.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="item">
+                    <div class="favourite"><a href="#" data-id="7"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-1.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="8"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-2.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="item">
+                    <div class="favourite"><a href="#" data-id="9"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-3.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header row">
+                <div class="col-6 left">Коллекции букетов</div>
+                <div class="col-6 right"><a href="#">Смотреть всё &rsaquo;</a></div>
+            </div>
+            <div class="tiles row">
+                <div class="col-lg-6">
+                    <a href="#" class="item">
+                        <img src="images/image-10.jpg" alt="Image 10">
+                        <div class="text">
+                            <div class="centered">
+                                <h2>Авторские<br>букеты</h2>
+                                <div class="price">от 920 &#x20bd;</div>
+                                <p>Коллекция эксклюзивных букетов покоряющих сердца</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="#" class="item">
+                        <img src="images/image-11.jpg" alt="Image 10">
+                        <div class="text">
+                            <div class="centered">
+                                <h2>Авторские<br>букеты</h2>
+                                <div class="price">от 920 &#x20bd;</div>
+                                <p>Коллекция эксклюзивных букетов покоряющих сердца</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="#" class="item">
+                        <img src="images/image-12.jpg" alt="Image 10">
+                        <div class="text">
+                            <div class="centered">
+                                <h2>Авторские<br>букеты</h2>
+                                <div class="price">от 920 &#x20bd;</div>
+                                <p>Коллекция эксклюзивных букетов покоряющих сердца</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="#" class="item">
+                        <img src="images/image-13.jpg" alt="Image 10">
+                        <div class="text">
+                            <div class="centered">
+                                <h2>Авторские<br>букеты</h2>
+                                <div class="price">от 920 &#x20bd;</div>
+                                <p>Коллекция эксклюзивных букетов покоряющих сердца</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header row">
+                <div class="col-6 left">Новинки</div>
+                <div class="col-6 right"><a href="#">Смотреть всё &rsaquo;</a></div>
+            </div>
+            <div class="showcase slider">
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="3"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-3.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="4"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-1.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="5"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-2.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="6"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-3.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="7"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-1.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="8"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-2.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+                <div class="new item">
+                    <div class="favourite"><a href="#" data-id="9"><i class="fas fa-heart"></i></a></div>
+                    <a class="image-wrapper" href="item.html"><img src="images/image-3.jpg" alt="Image 1"></a>
+                    <div class="price">8300 &#x20bd;</div>
+                    <div class="name"><a href="item.html">Весенний [16.04.2023]</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="w-75 mx-auto">
+                <h1>О нас</h1>
+                <p>
+                    Цветочная мастерская Flowers Prague — это авторская флористика, которая была создана для людей, которые любят цветы и любят цветы дарить. Композиции, которые собирают наши флористы, это не просто букеты - это эмоции. Подтверждение этому наши постоянные клиенты, которые уже на протяжении многих лет доверяют нам свои самые важные даты и улыбки самых близких людей.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-center text-lg-start mb-3">
+                    <p><a href="index.html"><img src="images/logo.png" alt="flowers"></a>
+
+                    <p>Адрес:<br>Husitská 1251/28, Praha 3, 130 00
+                    <p>Рабочие часы магазина:<br>Пн-Вс 10:00 - 18:30
+                </div>
+                <nav class="col-lg-6 mb-3 mt-0 mt-md-2">
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="we_teach.html">Обучение</a></li>
+                        <li><a href="care.html">Уход за букетом</a></li>
+                    </ul>
+                </nav>
+                <div class="col-lg-3 text-center text-lg-end mb-3">
+                    <a class="phone" href="tel:+420777556121">+420 777 556 121</a><br>
+                    <a class="recall" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать звонок</a>
+
+                    <div class="social">
+                        <a href="https://www.instagram.com/flowers_prague/"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/flowerspraguee"><i class="fab fa-fw fa-facebook-square"></i></a>
+                        <a href="https://www.tiktok.com/@flowers_prague"><i class="fab fa-fw fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            2015 - 2023 © fLOVErs Prague.
+        </div>
+    </footer>
+
+    <div style="display: none;" id="hidden-content">
+        <h2>Title</h2>
+        <p>Simple modal window</p>
+    </div>
+
+    <form style="display: none;" id="search-field">
+        <input name="search">
+    </form>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/js/fancybox.umd.js"></script>
+    <script src="vendor/js/slick.min.js"></script>
+    <script src="vendor/js/select2.min.js"></script><script src="vendor/js/datepicker.js"></script>
+    <script src="scripts.js"></script>
+
+    <script>
+        window.onload = function () {
+            let preloader = document.getElementById('preloader');
+
+            preloader.style.opacity = '0';
+            setTimeout(function () { preloader.parentNode.removeChild(preloader) }, 500)
+        };
+    </script>
+</body>
+</html>
